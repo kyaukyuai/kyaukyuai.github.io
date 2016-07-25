@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on MeMo.kyaukyuai</title>
+    <link>https://kyaukyuai.github.io/categories/docker/</link>
+    <description>Recent content in Docker on MeMo.kyaukyuai</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 24 Jul 2016 21:42:34 +0900</lastBuildDate>
+    <atom:link href="https://kyaukyuai.github.io/categories/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Rails on Docker</title>
+      <link>https://kyaukyuai.github.io/post/docker-nization/</link>
+      <pubDate>Sun, 24 Jul 2016 21:42:34 +0900</pubDate>
+      
+      <guid>https://kyaukyuai.github.io/post/docker-nization/</guid>
+      <description>
+
+&lt;h1 id=&#34;getting-started-with-docker-for-mac:0be724fe031b992b222d8dd4c2e8dc94&#34;&gt;Getting Started with Docker for Mac&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.docker.com/docker-for-mac/&#34;&gt;Getting Started with Docker for Mac&lt;/a&gt; の手順に従って、Docker for Macをインストールする.&lt;/p&gt;
+
+&lt;h1 id=&#34;dockerfileの作成:0be724fe031b992b222d8dd4c2e8dc94&#34;&gt;Dockerfileの作成&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;touch Dockerfile
+vim Dockerfile
+cat Dockerfile
+---
+FROM ruby:2.2.3
+RUN apt-get update -qq &amp;amp;&amp;amp; apt-get install -y build-essential libpq-dev postgres-client nodejs
+RUN mkdir /app
+WORKDIR /app
+ADD Gemfile /app/Gemfile
+ADD Gemfile.lock /app/Gemfile.lock
+RUN bundle install
+ADD . /app
+---
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;docker-composeによるオーケストレーション:0be724fe031b992b222d8dd4c2e8dc94&#34;&gt;docker-composeによるオーケストレーション&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;touch docker-compose.yml
+vim docker-compose.yml
+cat docker-compose.yml
+---
+version: &#39;2.0&#39;
+services:
+  db:
+    image: postgres:9.5.3
+    expose:
+      - &amp;quot;5432&amp;quot;
+  web:
+    build: .
+    command: bundle exec rails s -p 3000 -b &#39;0.0.0.0&#39;
+    volumes:
+      - .:/app
+    ports:
+      - &amp;quot;3000:3000&amp;quot;
+    depends_on:
+      - db
+---
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;コンテナ起動:0be724fe031b992b222d8dd4c2e8dc94&#34;&gt;コンテナ起動&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;docker-compose build
+docker-compose run web bin/rake db:setup
+docker-compose up
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;動作確認:0be724fe031b992b222d8dd4c2e8dc94&#34;&gt;動作確認&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://localhost:3000&#34;&gt;http://localhost:3000&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;コンテナ起動後の操作:0be724fe031b992b222d8dd4c2e8dc94&#34;&gt;コンテナ起動後の操作&lt;/h1&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;ローカル開発時&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Docker Compose&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;rails g model Member&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;docker-compose run web rails g model Member&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;rake db:migrate&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;docker-compose run web rake db:migrate&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;rails dbconsole&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;docker-compose run web rails dbconsole&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;RAILS_ENV=test bundle exec rake db:setup&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;docker-compose run -e RAILS_ENV=test web bundle exec rake db:setup&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&#34;webサーバのスケールアウト:0be724fe031b992b222d8dd4c2e8dc94&#34;&gt;Webサーバのスケールアウト&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;docker-compose scale web=3
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

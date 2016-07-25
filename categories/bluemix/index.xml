@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bluemix on MeMo.kyaukyuai</title>
+    <link>https://kyaukyuai.github.io/categories/bluemix/</link>
+    <description>Recent content in Bluemix on MeMo.kyaukyuai</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 09 Jul 2016 08:48:29 +0900</lastBuildDate>
+    <atom:link href="https://kyaukyuai.github.io/categories/bluemix/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Bluemixで始める無料bot運用 - Hubot編 -</title>
+      <link>https://kyaukyuai.github.io/post/bluemix_bot/</link>
+      <pubDate>Sat, 09 Jul 2016 08:48:29 +0900</pubDate>
+      
+      <guid>https://kyaukyuai.github.io/post/bluemix_bot/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;https://console.au-syd.bluemix.net/&#34;&gt;Bluemix&lt;/a&gt;を利用して24時間稼働のbotを無料で運用したいということで実施しました.
+Bluemixの価格表は&lt;a href=&#34;https://console.ng.bluemix.net/pricing/&#34;&gt;こちら&lt;/a&gt;になりますので参考にしてください.
+実際はTwiiterのボットを作成したので後ほど触れようと思います.&lt;/p&gt;
+
+&lt;h1 id=&#34;前提:26cfd8f9fe8dc20a92460617f43a11d3&#34;&gt;前提&lt;/h1&gt;
+
+&lt;p&gt;前提として下記アカウントを既に保持しているとする.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Bluemixアカウント&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;hubotインスタンスの生成:26cfd8f9fe8dc20a92460617f43a11d3&#34;&gt;hubotインスタンスの生成&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.npmjs.com/getting-started/installing-node&#34;&gt;node.jsとnpm&lt;/a&gt;を導入後、下記をコマンドによりhubot generatorをインストールする.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;%  npm install -g yo generator-hubot
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;下記コマンドが正常に終了すると、[yeoman]()のhubot generatorが利用できるようになるので、新しくhubotのインスタンスを生成してみよう.ここでは、&lt;code&gt;ourhubot&lt;/code&gt;という名前のインスタンスを生成する例を示す.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;% mkdir ourhubot
+% cd ourhubot
+% yo hubot
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ここで、gitを利用している場合は上記コマンドで生成されたファイルで初期化しよう.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;% git init
+% git add .
+% git commit -m &amp;quot;Initial commit&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;一旦&lt;code&gt;ourhubot&lt;/code&gt;の完成で、ローカルマシンで動かすことが可能である.hubotはデフォルトでredisを必要としているため、動かす際にredisをインストールする、または&lt;code&gt;external-scripts.json&lt;/code&gt;から&lt;code&gt;hubot-redis-brain&lt;/code&gt;を除く必要があるので注意を.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;% bin/hubot --name ourhubot
+ourhubot&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;bluemixへのhubotデプロイ:26cfd8f9fe8dc20a92460617f43a11d3&#34;&gt;Bluemixへのhubotデプロイ&lt;/h1&gt;
+
+&lt;p&gt;Bluemixのアカウントを既に保持している場合は、あとは必要となるのは&lt;a href=&#34;https://github.com/cloudfoundry/cli/releases&#34;&gt;Cloud Foundry CLI&lt;/a&gt;だけである.
+macの場合は、下記コマンドでインストール可能である.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;% brew tap cloudfoundry/tap
+% brew install cf-cli
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;次に&lt;code&gt;manifest.yml&lt;/code&gt;を定義します.そして&lt;code&gt;procfile&lt;/code&gt;は不要になるので削除します.下記はSlack利用の場合の例になります.
+詳しくは&lt;a href=&#34;https://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html&#34;&gt;こちら&lt;/a&gt;を参考にして下さい.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;applications:
+- buildpack: https://github.com/jthomas/nodejs-v4-buildpack.git
+  command: ./bin/hubot --adapter slack
+  path: .
+  instances: 1
+  memory: 256M
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;manifest.yml&lt;/code&gt;の準備が終わりましたら、最終段階です.
+下記コマンドではログイン情報が求められます.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;% cd ourhubot
+% cf api https://api.ng.bluemix.net
+% cf login
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;いよいよ、Bluemixによる無料botの運用の開始です.
+下記コマンドで稼働させてください.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;% cf push NAME_OF_YOUR_HUBOT_APP
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;また、herokuのgithubコネクトと同様にBluemix側にgitのレポジトリを指定すれば、githubにpushからの自動アップデートが実現できます.&lt;/p&gt;
+
+&lt;h1 id=&#34;tips:26cfd8f9fe8dc20a92460617f43a11d3&#34;&gt;Tips&lt;/h1&gt;
+
+&lt;h3 id=&#34;bluemix-cli:26cfd8f9fe8dc20a92460617f43a11d3&#34;&gt;Bluemix CLI&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;Clound Foundry&lt;/code&gt;の&lt;code&gt;cf&lt;/code&gt;コマンドに代わる&lt;code&gt;bleumix Cli&lt;/code&gt;が登場している.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://clis.ng.bluemix.net/ui/home.html&#34;&gt;こちら&lt;/a&gt;からダウンロード可能です.&lt;/p&gt;
+
+&lt;h3 id=&#34;organizationの設定に注意:26cfd8f9fe8dc20a92460617f43a11d3&#34;&gt;Organizationの設定に注意&lt;/h3&gt;
+
+&lt;p&gt;Organizationのロケーションとして、2016年7月9日現在で3箇所(シドニー、英国、米国南部)選択可能であるが、どこを選ぶかによってAPIのEndpointで指定するURLを変わってくるので注意を.&lt;/p&gt;
+
+&lt;h1 id=&#34;参考:26cfd8f9fe8dc20a92460617f43a11d3&#34;&gt;参考&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://clis.ng.bluemix.net/ui/home.html&#34;&gt;Bluemix CLI&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/github/hubot/blob/master/docs/index.md&#34;&gt;github:hubot&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://console.ng.bluemix.net/pricing/&#34;&gt;Bluemix価格表&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html&#34;&gt;Cloud Foundry Document:Deploying with Application Manifests&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
