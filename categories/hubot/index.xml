@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hubot on MeMo.kyaukyuai</title>
+    <title>hubot on MeMo.kyaukyuai</title>
     <link>https://kyaukyuai.github.io/categories/hubot/</link>
-    <description>Recent content in Hubot on MeMo.kyaukyuai</description>
+    <description>Recent content in hubot on MeMo.kyaukyuai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 09 Jul 2016 08:48:29 +0900</lastBuildDate>
@@ -21,7 +21,7 @@
 Bluemixの価格表は&lt;a href=&#34;https://console.ng.bluemix.net/pricing/&#34;&gt;こちら&lt;/a&gt;になりますので参考にしてください.
 実際はTwiiterのボットを作成したので後ほど触れようと思います.&lt;/p&gt;
 
-&lt;h1 id=&#34;前提:26cfd8f9fe8dc20a92460617f43a11d3&#34;&gt;前提&lt;/h1&gt;
+&lt;h1 id=&#34;前提&#34;&gt;前提&lt;/h1&gt;
 
 &lt;p&gt;前提として下記アカウントを既に保持しているとする.&lt;/p&gt;
 
@@ -29,7 +29,7 @@ Bluemixの価格表は&lt;a href=&#34;https://console.ng.bluemix.net/pricing/&#3
 &lt;li&gt;Bluemixアカウント&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;hubotインスタンスの生成:26cfd8f9fe8dc20a92460617f43a11d3&#34;&gt;hubotインスタンスの生成&lt;/h1&gt;
+&lt;h1 id=&#34;hubotインスタンスの生成&#34;&gt;hubotインスタンスの生成&lt;/h1&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://docs.npmjs.com/getting-started/installing-node&#34;&gt;node.jsとnpm&lt;/a&gt;を導入後、下記をコマンドによりhubot generatorをインストールする.&lt;/p&gt;
 
@@ -56,7 +56,7 @@ Bluemixの価格表は&lt;a href=&#34;https://console.ng.bluemix.net/pricing/&#3
 ourhubot&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;bluemixへのhubotデプロイ:26cfd8f9fe8dc20a92460617f43a11d3&#34;&gt;Bluemixへのhubotデプロイ&lt;/h1&gt;
+&lt;h1 id=&#34;bluemixへのhubotデプロイ&#34;&gt;Bluemixへのhubotデプロイ&lt;/h1&gt;
 
 &lt;p&gt;Bluemixのアカウントを既に保持している場合は、あとは必要となるのは&lt;a href=&#34;https://github.com/cloudfoundry/cli/releases&#34;&gt;Cloud Foundry CLI&lt;/a&gt;だけである.
 macの場合は、下記コマンドでインストール可能である.&lt;/p&gt;
@@ -92,19 +92,19 @@ macの場合は、下記コマンドでインストール可能である.&lt;/p&
 
 &lt;p&gt;また、herokuのgithubコネクトと同様にBluemix側にgitのレポジトリを指定すれば、githubにpushからの自動アップデートが実現できます.&lt;/p&gt;
 
-&lt;h1 id=&#34;tips:26cfd8f9fe8dc20a92460617f43a11d3&#34;&gt;Tips&lt;/h1&gt;
+&lt;h1 id=&#34;tips&#34;&gt;Tips&lt;/h1&gt;
 
-&lt;h3 id=&#34;bluemix-cli:26cfd8f9fe8dc20a92460617f43a11d3&#34;&gt;Bluemix CLI&lt;/h3&gt;
+&lt;h3 id=&#34;bluemix-cli&#34;&gt;Bluemix CLI&lt;/h3&gt;
 
 &lt;p&gt;&lt;code&gt;Clound Foundry&lt;/code&gt;の&lt;code&gt;cf&lt;/code&gt;コマンドに代わる&lt;code&gt;bleumix Cli&lt;/code&gt;が登場している.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://clis.ng.bluemix.net/ui/home.html&#34;&gt;こちら&lt;/a&gt;からダウンロード可能です.&lt;/p&gt;
 
-&lt;h3 id=&#34;organizationの設定に注意:26cfd8f9fe8dc20a92460617f43a11d3&#34;&gt;Organizationの設定に注意&lt;/h3&gt;
+&lt;h3 id=&#34;organizationの設定に注意&#34;&gt;Organizationの設定に注意&lt;/h3&gt;
 
 &lt;p&gt;Organizationのロケーションとして、2016年7月9日現在で3箇所(シドニー、英国、米国南部)選択可能であるが、どこを選ぶかによってAPIのEndpointで指定するURLを変わってくるので注意を.&lt;/p&gt;
 
-&lt;h1 id=&#34;参考:26cfd8f9fe8dc20a92460617f43a11d3&#34;&gt;参考&lt;/h1&gt;
+&lt;h1 id=&#34;参考&#34;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://clis.ng.bluemix.net/ui/home.html&#34;&gt;Bluemix CLI&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MeMo.kyaukyuai </title>
+    <link>https://kyaukyuai.github.io/categories/tools/</link>
+    <language>en-us</language>
+    <author></author>
+    <rights>(C) 2016</rights>
+    <updated>2016-07-09 08:48:29 &#43;0900 JST</updated>
+
+    
+      
+        <item>
+          <title>Bluemixで始める無料bot運用 - Twitter編 -</title>
+          <link>https://kyaukyuai.github.io/post/bluemix_bot/</link>
+          <pubDate>Sat, 09 Jul 2016 08:48:29 JST</pubDate>
+          <author></author>
+          <guid>https://kyaukyuai.github.io/post/bluemix_bot/</guid>
+          <description>&lt;p&gt;contents here&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Webサイト構築・開発に便利なサイト一覧</title>
+          <link>https://kyaukyuai.github.io/post/site/</link>
+          <pubDate>Sat, 25 Jun 2016 12:01:12 JST</pubDate>
+          <author></author>
+          <guid>https://kyaukyuai.github.io/post/site/</guid>
+          <description>
+
+&lt;p&gt;(最終更新日時: 2016/06/26)&lt;/p&gt;
+
+&lt;p&gt;Webサイトやブログの構築・開発の際に自分が利用している便利なサイトを備忘録として記述していく.&lt;/p&gt;
+
+&lt;p&gt;このポストに関しては不定期に更新していく予定.&lt;/p&gt;
+
+&lt;h2 id=&#34;フリー画像検索&#34;&gt;フリー画像検索&lt;/h2&gt;
+
+&lt;p&gt;大抵の場合、下記サイトでイケてる画像を拝借する. まずはこのサイト！てな感じ.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://unsplash.com/&#34;&gt;unsplash&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;最近ちょろちょろと使っているサイト.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://pixabay.com/&#34;&gt;pixabay&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;ロゴ作成&#34;&gt;ロゴ作成&lt;/h2&gt;
+
+&lt;p&gt;自分の趣味サイトの場合は、こちらのサイトを使って作成している.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.squarespace.com/logo#&#34;&gt;squarespace&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;画像編集&#34;&gt;画像編集&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.gimp.org/&#34;&gt;GIMP&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.img2icnsapp.com/&#34;&gt;Image2icon&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;サイト分析&#34;&gt;サイト分析&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.google.com/analytics/&#34;&gt;Google analytics&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;markdown記法&#34;&gt;Markdown記法&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://qiita.com/Qiita/items/c686397e4a0f4f11683d#images---%E7%94%BB%E5%83%8F%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF&#34;&gt;Qiita:Markdown記法チートシート&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;ciaas&#34;&gt;CIaaS&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://app.wercker.com/&#34;&gt;wercker&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://circleci.com/&#34;&gt;CircleCI&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;静的ページ作成エンジン&#34;&gt;静的ページ作成エンジン&lt;/h2&gt;
+
+&lt;p&gt;関連記事: &lt;a href=&#34;https://kyaukyuai.github.io/post/hello/&#34;&gt;HugoとGitHubPagesで始める無料でのブログ運営 + Werckerによる記事公開の自動化&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;アプリ作成関連&#34;&gt;アプリ作成関連&lt;/h2&gt;
+
+&lt;p&gt;アプリのマーケティングページの作成から、スクリーンショットの作成まで、アプリリリースに向けて必要な一通りの作業を担ってくれるサービス.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://launchkit.io/&#34;&gt;launchkit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;アプリ作成時のアイコンはこちらから.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://icons8.com/&#34;&gt;icons8&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;others&#34;&gt;Others&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kyaukyuai.github.io/&#34;&gt;kyaukyuai.github.io&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/&#34;&gt;github&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://bitbucket.org&#34;&gt;bitbucket&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Heroku&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://console.au-syd.bluemix.net/&#34;&gt;IBM Bluemix&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Goole Cloud Platform&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Slack&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+      
+    
+
+  </channel>
+</rss>

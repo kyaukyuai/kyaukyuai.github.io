@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ios on MeMo.kyaukyuai</title>
+    <title>ios on MeMo.kyaukyuai</title>
     <link>https://kyaukyuai.github.io/categories/ios/</link>
-    <description>Recent content in Ios on MeMo.kyaukyuai</description>
+    <description>Recent content in ios on MeMo.kyaukyuai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 17 Jul 2016 23:43:42 +0900</lastBuildDate>
@@ -24,55 +24,55 @@
 &lt;p&gt;iOSアプリ作成のためにSwiftプロジェクトを作成する際に最初にやるべきことを記述していく.
 いつもどうしてたか忘れてしまうので備忘録として記述する.&lt;/p&gt;
 
-&lt;h1 id=&#34;gitignoreテンプレートの作成:79b4af3acc1f45e3f9dd0beca1070d4f&#34;&gt;.gitignoreテンプレートの作成&lt;/h1&gt;
+&lt;h1 id=&#34;gitignoreテンプレートの作成&#34;&gt;.gitignoreテンプレートの作成&lt;/h1&gt;
 
 &lt;p&gt;まずはバージョン管理の際に必要となる.gitignoreテンプレートの作成方法を記述する.
 自分の場合は、&lt;a href=&#34;https://rubygems.org/gems/gemignore&#34;&gt;gemignore&lt;/a&gt;を利用している.&lt;/p&gt;
 
-&lt;h2 id=&#34;gemignoreのインストール:79b4af3acc1f45e3f9dd0beca1070d4f&#34;&gt;gemignoreのインストール&lt;/h2&gt;
+&lt;h2 id=&#34;gemignoreのインストール&#34;&gt;gemignoreのインストール&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;gem install gemignore
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;テンプレート生成:79b4af3acc1f45e3f9dd0beca1070d4f&#34;&gt;テンプレート生成&lt;/h2&gt;
+&lt;h2 id=&#34;テンプレート生成&#34;&gt;テンプレート生成&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;cd project_root
 touch .gitignore
 gemignore add swift
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;cocoapod:79b4af3acc1f45e3f9dd0beca1070d4f&#34;&gt;CocoaPod&lt;/h1&gt;
+&lt;h1 id=&#34;cocoapod&#34;&gt;CocoaPod&lt;/h1&gt;
 
 &lt;p&gt;次に、外部ライブラリ利用時に不可欠な&lt;a href=&#34;https://cocoapods.org/&#34;&gt;CocoaPods&lt;/a&gt;の導入手順を記述する.&lt;/p&gt;
 
-&lt;h2 id=&#34;cocoapods-gemのインストール:79b4af3acc1f45e3f9dd0beca1070d4f&#34;&gt;cocoapods gemのインストール&lt;/h2&gt;
+&lt;h2 id=&#34;cocoapods-gemのインストール&#34;&gt;cocoapods gemのインストール&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;gem install cocoapods
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;podfileの生成:79b4af3acc1f45e3f9dd0beca1070d4f&#34;&gt;Podfileの生成&lt;/h2&gt;
+&lt;h2 id=&#34;podfileの生成&#34;&gt;Podfileの生成&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;pod init
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;ライブラリをインストールor更新:79b4af3acc1f45e3f9dd0beca1070d4f&#34;&gt;ライブラリをインストールor更新&lt;/h2&gt;
+&lt;h2 id=&#34;ライブラリをインストールor更新&#34;&gt;ライブラリをインストールor更新&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;pod install
 or
 pod update
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;swiftlint:79b4af3acc1f45e3f9dd0beca1070d4f&#34;&gt;SwiftLint&lt;/h1&gt;
+&lt;h1 id=&#34;swiftlint&#34;&gt;SwiftLint&lt;/h1&gt;
 
 &lt;p&gt;次に、コード品質に不可欠なLintの導入手順を記述する.
 ここでは、&lt;a href=&#34;https://github.com/realm/SwiftLint&#34;&gt;SwiftLint&lt;/a&gt;を利用する.&lt;/p&gt;
 
-&lt;h2 id=&#34;swiftlintのインストール:79b4af3acc1f45e3f9dd0beca1070d4f&#34;&gt;swiftlintのインストール&lt;/h2&gt;
+&lt;h2 id=&#34;swiftlintのインストール&#34;&gt;swiftlintのインストール&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;brew install swiftlint
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;xcodeでのセットアップ:79b4af3acc1f45e3f9dd0beca1070d4f&#34;&gt;Xcodeでのセットアップ&lt;/h2&gt;
+&lt;h2 id=&#34;xcodeでのセットアップ&#34;&gt;Xcodeでのセットアップ&lt;/h2&gt;
 
 &lt;p&gt;&amp;ldquo;Run Script Phase&amp;rdquo;に下記スクリプトを追加する.&lt;/p&gt;
 
@@ -84,7 +84,7 @@ fi
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;swiftlint-ymlの生成:79b4af3acc1f45e3f9dd0beca1070d4f&#34;&gt;.swiftlint.ymlの生成&lt;/h2&gt;
+&lt;h2 id=&#34;swiftlint-ymlの生成&#34;&gt;.swiftlint.ymlの生成&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;touch .swiftlint.yml
 cat .swiftlint.yml
@@ -99,11 +99,11 @@ file_length:
   - 1200 #error
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;fabric:79b4af3acc1f45e3f9dd0beca1070d4f&#34;&gt;Fabric&lt;/h1&gt;
+&lt;h1 id=&#34;fabric&#34;&gt;Fabric&lt;/h1&gt;
 
 &lt;p&gt;Fabricの指示に従って進めると特につまづくところはない.&lt;/p&gt;
 
-&lt;h1 id=&#34;reference:79b4af3acc1f45e3f9dd0beca1070d4f&#34;&gt;Reference&lt;/h1&gt;
+&lt;h1 id=&#34;reference&#34;&gt;Reference&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/realm/SwiftLint&#34;&gt;github:SwiftLint&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
@@ -123,7 +123,7 @@ file_length:
 
 &lt;p&gt;&lt;a href=&#34;https://launchkit.io/websites/1YCKKCAwF84/&#34;&gt;マーケティングページ&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;利用したライブラリ一覧:7c53c40caf708c6c5e42c57f9bb7eeec&#34;&gt;利用したライブラリ一覧&lt;/h2&gt;
+&lt;h2 id=&#34;利用したライブラリ一覧&#34;&gt;利用したライブラリ一覧&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Alamofire&lt;/p&gt;&lt;/li&gt;

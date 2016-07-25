@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MeMo.kyaukyuai </title>
+    <link>https://kyaukyuai.github.io/tags/app/</link>
+    <language>en-us</language>
+    <author></author>
+    <rights>(C) 2016</rights>
+    <updated>2016-07-04 22:09:04 &#43;0900 JST</updated>
+
+    
+      
+        <item>
+          <title>初iOSアプリ公開(QiitaQ)</title>
+          <link>https://kyaukyuai.github.io/post/qiitaq/</link>
+          <pubDate>Mon, 04 Jul 2016 22:09:04 JST</pubDate>
+          <author></author>
+          <guid>https://kyaukyuai.github.io/post/qiitaq/</guid>
+          <description>
+
+&lt;p&gt;&lt;a href=&#34;https://launchkit.io/websites/1YCKKCAwF84/&#34;&gt;マーケティングページ&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;利用したライブラリ一覧&#34;&gt;利用したライブラリ一覧&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Alamofire&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;SwiftyJSON&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;ObjectMapper&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Fabric&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Crashlytics&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;RealmSwift&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;ReactKit&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;PusherSwift&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;JSQMessagesViewController&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;MCSwipeTableViewCell&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Optimizely-iOS-SDK&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Charts/Realm&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+      
+    
+
+  </channel>
+</rss>

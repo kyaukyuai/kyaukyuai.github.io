@@ -1,0 +1,984 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        
+            
+                <title>Rails on Docker</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.16" />
+        
+
+
+        
+            <meta name="author" content="kyaukyuai">
+        
+        
+            <meta name="description" content="Docker-nization">
+        
+
+        
+
+  <meta name="twitter:card" content="summary"/>
+
+
+
+<meta name="twitter:title" content="Rails on Docker"/>
+<meta name="twitter:description" content="Docker-nization"/>
+<meta name="twitter:site" content="@kyaukyuai"/>
+
+
+        <meta property="og:title" content="Rails on Docker" />
+<meta property="og:description" content="Docker-nization" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kyaukyuai.github.io/post/docker-nization/" />
+
+
+<meta property="og:updated_time" content="2016-07-24T21:42:34&#43;09:00"/>
+
+
+
+
+
+
+
+
+
+
+        
+<meta itemprop="name" content="Rails on Docker">
+<meta itemprop="description" content="Docker-nization">
+
+
+<meta itemprop="dateModified" content="2016-07-24T21:42:34&#43;09:00" />
+<meta itemprop="wordCount" content="153">
+
+
+
+<meta itemprop="keywords" content="bluemix,disqus,docker,git,github,google app engine,googole analytics,hubot,hugo,ios,lint,pod,swift,wercker,wordpress," />
+
+        
+
+        
+
+        
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="/css/google-font.css" />
+            <link rel="stylesheet" href="/css/font-awesome.min.css" />
+            <link rel="stylesheet" href="/css/main.css" />
+            <link rel="stylesheet" href="/css/add-on.css" />
+            <link rel="stylesheet" href="/css/monokai-sublime.css">
+        
+
+        
+
+        
+        
+        
+            
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-79859752-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+        
+    </head>
+    <body>
+
+        
+        <div id="wrapper">
+
+    
+    
+<header id="header">
+    
+        <h2><a href="/">MeMo.kyaukyuai</i></a></h2>
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="/post">
+                        
+                            <i class="fa fa-newspaper-o">&nbsp;</i>Post
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/categories/">
+                        Categories
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/about">
+                        About
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li id="share-nav" class="share-menu" style="display:none;">
+                <a class="fa-share-alt" href="#share-menu">Share</a>
+            </li>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="hidden" name="q" value="site:https://kyaukyuai.github.io/">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="q" value="site:https://kyaukyuai.github.io/">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="/post">
+                            <h3>
+                                
+                                    <i class="fa fa-newspaper-o">&nbsp;</i>
+                                
+                                Post
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/">
+                            <h3>
+                                
+                                Categories
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/about">
+                            <h3>
+                                
+                                About
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+                    
+                
+
+                
+                    <li>
+                        <a href="https://kyaukyuai.github.io/post/docker-nization/"><p>Rails on Docker</p></a>
+                    </li>
+                
+                    <li>
+                        <a href="https://kyaukyuai.github.io/post/start_swift_project/"><p>新規Swiftプロジェクト作成時に最初にやること</p></a>
+                    </li>
+                
+                    <li>
+                        <a href="https://kyaukyuai.github.io/post/bluemix_bot/"><p>Bluemixで始める無料bot運用 - Hubot編 -</p></a>
+                    </li>
+                
+                    <li>
+                        <a href="https://kyaukyuai.github.io/post/qiitaq/"><p>初iOSアプリ公開(QiitaQ)</p></a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        
+</section>
+
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>Share this post <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+<li><a href="//twitter.com/share?url=https%3a%2f%2fkyaukyuai.github.io%2fpost%2fdocker-nization%2f&text=Rails%20on%20Docker&via=kyaukyuai" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+</a></li>
+
+
+<li><a href="//plus.google.com/share?url=https%3a%2f%2fkyaukyuai.github.io%2fpost%2fdocker-nization%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+</a></li>
+
+
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fkyaukyuai.github.io%2fpost%2fdocker-nization%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+</a></li>
+
+
+<li><a href="//reddit.com/submit?url=https%3a%2f%2fkyaukyuai.github.io%2fpost%2fdocker-nization%2f&title=Rails%20on%20Docker" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+</a></li>
+
+
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fkyaukyuai.github.io%2fpost%2fdocker-nization%2f&title=Rails%20on%20Docker" target="_blank" class="share-btn linkedin">
+    <i class="fa fa-linkedin"></i>
+    <p>LinkedIn</p>
+</a></li>
+
+
+<li><a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fkyaukyuai.github.io%2fpost%2fdocker-nization%2f&title=Rails%20on%20Docker" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+</a></li>
+
+
+<li><a href="mailto:?subject=Check out this post by kyaukyuai&body=https%3a%2f%2fkyaukyuai.github.io%2fpost%2fdocker-nization%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+</a></li>
+
+        </ul>
+    </section>
+</section>
+
+    
+    <div id="main">
+        
+        
+        <article class="post">
+    <header>
+    <div class="title">
+        
+            <h1><a href="https://kyaukyuai.github.io/post/docker-nization/">Rails on Docker</a></h1>
+            
+        
+        
+            <p>Docker-nization</p>
+        
+    </div>
+    <div class="meta">
+        
+            
+        
+
+        <time class="published"
+            datetime='2016-07-24'>
+            July 24, 2016</time>
+        <span class="author">kyaukyuai</span>
+        
+            <p>1 minute read</p>
+        
+        
+    </div>
+</header>
+
+
+    <section id="social-share">
+        <ul class="icons">
+            
+
+
+<li><a href="//twitter.com/share?url=https%3a%2f%2fkyaukyuai.github.io%2fpost%2fdocker-nization%2f&text=Rails%20on%20Docker&via=kyaukyuai" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+</a></li>
+
+
+<li><a href="//plus.google.com/share?url=https%3a%2f%2fkyaukyuai.github.io%2fpost%2fdocker-nization%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+</a></li>
+
+
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fkyaukyuai.github.io%2fpost%2fdocker-nization%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+</a></li>
+
+
+<li><a href="//reddit.com/submit?url=https%3a%2f%2fkyaukyuai.github.io%2fpost%2fdocker-nization%2f&title=Rails%20on%20Docker" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+</a></li>
+
+
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fkyaukyuai.github.io%2fpost%2fdocker-nization%2f&title=Rails%20on%20Docker" target="_blank" class="share-btn linkedin">
+    <i class="fa fa-linkedin"></i>
+    <p>LinkedIn</p>
+</a></li>
+
+
+<li><a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fkyaukyuai.github.io%2fpost%2fdocker-nization%2f&title=Rails%20on%20Docker" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+</a></li>
+
+
+<li><a href="mailto:?subject=Check out this post by kyaukyuai&body=https%3a%2f%2fkyaukyuai.github.io%2fpost%2fdocker-nization%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+</a></li>
+
+        </ul>
+    </section>
+    
+    
+
+    
+        
+        
+
+
+
+
+    
+
+
+        
+
+        <a href="https://kyaukyuai.github.io/post/docker-nization/" class="image featured">
+            <img src="/images/docker-nization.jpeg" alt="docker-nization" />
+        </a>
+    
+
+
+    <div id="content">
+        
+
+<h1 id="getting-started-with-docker-for-mac">Getting Started with Docker for Mac</h1>
+
+<p><a href="https://docs.docker.com/docker-for-mac/">Getting Started with Docker for Mac</a> の手順に従って、Docker for Macをインストールする.</p>
+
+<h1 id="dockerfileの作成">Dockerfileの作成</h1>
+
+<pre><code>touch Dockerfile
+vim Dockerfile
+cat Dockerfile
+---
+FROM ruby:2.2.3
+RUN apt-get update -qq &amp;&amp; apt-get install -y build-essential libpq-dev postgres-client nodejs
+RUN mkdir /app
+WORKDIR /app
+ADD Gemfile /app/Gemfile
+ADD Gemfile.lock /app/Gemfile.lock
+RUN bundle install
+ADD . /app
+---
+</code></pre>
+
+<h1 id="docker-composeによるオーケストレーション">docker-composeによるオーケストレーション</h1>
+
+<pre><code>touch docker-compose.yml
+vim docker-compose.yml
+cat docker-compose.yml
+---
+version: '2.0'
+services:
+  db:
+    image: postgres:9.5.3
+    expose:
+      - &quot;5432&quot;
+  web:
+    build: .
+    command: bundle exec rails s -p 3000 -b '0.0.0.0'
+    volumes:
+      - .:/app
+    ports:
+      - &quot;3000:3000&quot;
+    depends_on:
+      - db
+---
+</code></pre>
+
+<h1 id="コンテナ起動">コンテナ起動</h1>
+
+<pre><code>docker-compose build
+docker-compose run web bin/rake db:setup
+docker-compose up
+</code></pre>
+
+<h1 id="動作確認">動作確認</h1>
+
+<p><a href="http://localhost:3000">http://localhost:3000</a></p>
+
+<h1 id="コンテナ起動後の操作">コンテナ起動後の操作</h1>
+
+<table>
+<thead>
+<tr>
+<th>ローカル開発時</th>
+<th align="center">Docker Compose</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>rails g model Member</td>
+<td align="center">docker-compose run web rails g model Member</td>
+</tr>
+
+<tr>
+<td>rake db:migrate</td>
+<td align="center">docker-compose run web rake db:migrate</td>
+</tr>
+
+<tr>
+<td>rails dbconsole</td>
+<td align="center">docker-compose run web rails dbconsole</td>
+</tr>
+
+<tr>
+<td>RAILS_ENV=test bundle exec rake db:setup</td>
+<td align="center">docker-compose run -e RAILS_ENV=test web bundle exec rake db:setup</td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="webサーバのスケールアウト">Webサーバのスケールアウト</h1>
+
+<pre><code>docker-compose scale web=3
+</code></pre>
+
+    </div>
+
+    <footer>
+        <ul class="stats">
+    
+        
+
+        
+        
+            <li>
+                
+                
+                    
+
+                    
+
+                    
+
+                    
+                        Category
+                    
+                
+            </li>
+        
+    
+
+    
+    
+        <li><a href='/categories/docker'>docker</a></li>
+    
+</ul>
+
+    </footer>
+</article>
+<ul class="actions pagination">
+    
+        <li><a href="https://kyaukyuai.github.io/post/start_swift_project/"
+                class="button big previous">新規Swiftプロジェクト作成時に最初にやること</a></li>
+    
+
+    
+</ul>
+
+
+
+    
+        <article class="post">
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'memo-kyaukyuai';
+    var disqus_identifier = 'https:\/\/kyaukyuai.github.io\/post\/docker-nization\/';
+    var disqus_title = 'Rails on Docker';
+    var disqus_url = 'https:\/\/kyaukyuai.github.io\/post\/docker-nization\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </article>
+    
+
+
+    </div>
+    
+<section id="sidebar">
+
+    
+        <section id="intro">
+            
+            
+                
+                    <a href="/" class="logo"><img src="/images/memo.kyaukyuai.logo.main.png" alt="MeMo.kyaukyuai" /></a>
+                
+            
+            
+                <header>
+                    <h2>MeMo.kyaukyuai</h2>
+                    <p>日々の学習を備忘録として記述していきます. <i class='fa fa-hand-peace-o'></i></p>
+                </header>
+            
+            <ul class="icons">
+                
+                
+                    
+<li><a href="//github.com/kyaukyuai" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//twitter.com/kyaukyuai" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+                
+            </ul>
+        </section>
+
+    
+        <section id="recent-posts">
+            <ul class="posts">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+                    
+                
+
+                
+                    
+                
+
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="https://kyaukyuai.github.io/post/docker-nization/">Rails on Docker</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2016-07-24'>
+                                    July 24, 2016</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="https://kyaukyuai.github.io/post/start_swift_project/">新規Swiftプロジェクト作成時に最初にやること</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2016-07-17'>
+                                    July 17, 2016</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="https://kyaukyuai.github.io/post/bluemix_bot/">Bluemixで始める無料bot運用 - Hubot編 -</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2016-07-09'>
+                                    July 9, 2016</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="https://kyaukyuai.github.io/post/qiitaq/">初iOSアプリ公開(QiitaQ)</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2016-07-04'>
+                                    July 4, 2016</time>
+                            </header>
+                        </article>
+                    </li>
+                
+
+                
+                    <li>
+                        <ul class="actions">
+                            <li><a href=
+                            
+                                /post/
+                            
+                            class="button">View more posts</a></li>
+                        </ul>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+    
+    
+    
+        <section id="categories">
+            <ul class="posts">
+                <header>
+                    <h3><a href="/categories/">Categories</a></h3>
+                </header>
+
+                
+                    
+                
+
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/hugo/">hugo</a>
+                                <span style="float:right;">2</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/ios/">ios</a>
+                                <span style="float:right;">2</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/swift/">swift</a>
+                                <span style="float:right;">2</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/wercker/">wercker</a>
+                                <span style="float:right;">2</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/bluemix/">bluemix</a>
+                                <span style="float:right;">1</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/disqus/">disqus</a>
+                                <span style="float:right;">1</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/docker/">docker</a>
+                                <span style="float:right;">1</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/git/">git</a>
+                                <span style="float:right;">1</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/github/">github</a>
+                                <span style="float:right;">1</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/google-app-engine/">google app engine</a>
+                                <span style="float:right;">1</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/googole-analytics/">googole analytics</a>
+                                <span style="float:right;">1</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/hubot/">hubot</a>
+                                <span style="float:right;">1</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/lint/">lint</a>
+                                <span style="float:right;">1</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/pod/">pod</a>
+                                <span style="float:right;">1</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/wordpress/">wordpress</a>
+                                <span style="float:right;">1</span>
+                            </header>
+                        </article>
+                    </li>
+                
+            </ul>
+        </section>
+    
+
+    
+        
+        <section class="blurb">
+            <h2>About</h2>
+            <p>about.me</p>
+
+            <ul class="actions">
+                <li><a href="/about/" class="button">Learn More</a></li>
+            </ul>
+        </section>
+        
+
+    
+        <section id="footer">
+            <ul class="icons">
+                
+                
+                    
+<li><a href="//github.com/kyaukyuai" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//twitter.com/kyaukyuai" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+                
+            </ul>
+
+            <p class="copyright">&copy; MeMo.kyaukyuai. Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a>. Ported by <a href="//github.com/jpescador" target="_blank">Julio Pescador</a>. Powered by <a href="//gohugo.io" target="_blank">Hugo</a></p>
+        </section>
+
+</section>
+
+            </div>
+        <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+        
+
+        
+        
+            
+        
+
+        
+        
+            <script src="/js/jquery.min.js"></script>
+            <script src="/js/skel.min.js"></script>
+            <script src="/js/util.js"></script>
+            <script src="/js/main.js"></script>
+            <script src="/js/backToTop.js"></script>
+            <script src="/js/highlight.pack.js"></script>
+        
+
+        
+
+            
+            <script>hljs.initHighlightingOnLoad();</script>
+            
+    </body>
+</html>
+

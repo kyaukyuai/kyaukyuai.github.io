@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo on MeMo.kyaukyuai</title>
+    <title>hugo on MeMo.kyaukyuai</title>
     <link>https://kyaukyuai.github.io/categories/hugo/</link>
-    <description>Recent content in Hugo on MeMo.kyaukyuai</description>
+    <description>Recent content in hugo on MeMo.kyaukyuai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 25 Jun 2016 12:01:12 +0900</lastBuildDate>
@@ -23,7 +23,7 @@
 
 &lt;p&gt;このポストに関しては不定期に更新していく予定.&lt;/p&gt;
 
-&lt;h2 id=&#34;フリー画像検索:27ce8ab6b266bd47a3d17e0e8f807ad2&#34;&gt;フリー画像検索&lt;/h2&gt;
+&lt;h2 id=&#34;フリー画像検索&#34;&gt;フリー画像検索&lt;/h2&gt;
 
 &lt;p&gt;大抵の場合、下記サイトでイケてる画像を拝借する. まずはこのサイト！てな感じ.&lt;/p&gt;
 
@@ -37,7 +37,7 @@
 &lt;li&gt;&lt;a href=&#34;https://pixabay.com/&#34;&gt;pixabay&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;ロゴ作成:27ce8ab6b266bd47a3d17e0e8f807ad2&#34;&gt;ロゴ作成&lt;/h2&gt;
+&lt;h2 id=&#34;ロゴ作成&#34;&gt;ロゴ作成&lt;/h2&gt;
 
 &lt;p&gt;自分の趣味サイトの場合は、こちらのサイトを使って作成している.&lt;/p&gt;
 
@@ -45,7 +45,7 @@
 &lt;li&gt;&lt;a href=&#34;https://www.squarespace.com/logo#&#34;&gt;squarespace&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;画像編集:27ce8ab6b266bd47a3d17e0e8f807ad2&#34;&gt;画像編集&lt;/h2&gt;
+&lt;h2 id=&#34;画像編集&#34;&gt;画像編集&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.gimp.org/&#34;&gt;GIMP&lt;/a&gt;&lt;/p&gt;
@@ -57,19 +57,19 @@
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.img2icnsapp.com/&#34;&gt;Image2icon&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;サイト分析:27ce8ab6b266bd47a3d17e0e8f807ad2&#34;&gt;サイト分析&lt;/h2&gt;
+&lt;h2 id=&#34;サイト分析&#34;&gt;サイト分析&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.google.com/analytics/&#34;&gt;Google analytics&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;markdown記法:27ce8ab6b266bd47a3d17e0e8f807ad2&#34;&gt;Markdown記法&lt;/h2&gt;
+&lt;h2 id=&#34;markdown記法&#34;&gt;Markdown記法&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://qiita.com/Qiita/items/c686397e4a0f4f11683d#images---%E7%94%BB%E5%83%8F%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF&#34;&gt;Qiita:Markdown記法チートシート&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;ciaas:27ce8ab6b266bd47a3d17e0e8f807ad2&#34;&gt;CIaaS&lt;/h2&gt;
+&lt;h2 id=&#34;ciaas&#34;&gt;CIaaS&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://app.wercker.com/&#34;&gt;wercker&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
@@ -77,7 +77,7 @@
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://circleci.com/&#34;&gt;CircleCI&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;静的ページ作成エンジン:27ce8ab6b266bd47a3d17e0e8f807ad2&#34;&gt;静的ページ作成エンジン&lt;/h2&gt;
+&lt;h2 id=&#34;静的ページ作成エンジン&#34;&gt;静的ページ作成エンジン&lt;/h2&gt;
 
 &lt;p&gt;関連記事: &lt;a href=&#34;https://kyaukyuai.github.io/post/hello/&#34;&gt;HugoとGitHubPagesで始める無料でのブログ運営 + Werckerによる記事公開の自動化&lt;/a&gt;&lt;/p&gt;
 
@@ -85,7 +85,7 @@
 &lt;li&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;アプリ作成関連:27ce8ab6b266bd47a3d17e0e8f807ad2&#34;&gt;アプリ作成関連&lt;/h2&gt;
+&lt;h2 id=&#34;アプリ作成関連&#34;&gt;アプリ作成関連&lt;/h2&gt;
 
 &lt;p&gt;アプリのマーケティングページの作成から、スクリーンショットの作成まで、アプリリリースに向けて必要な一通りの作業を担ってくれるサービス.&lt;/p&gt;
 
@@ -99,13 +99,13 @@
 &lt;li&gt;&lt;a href=&#34;https://icons8.com/&#34;&gt;icons8&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;ショートurl作成:27ce8ab6b266bd47a3d17e0e8f807ad2&#34;&gt;ショートURL作成&lt;/h2&gt;
+&lt;h2 id=&#34;ショートurl作成&#34;&gt;ショートURL作成&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://app.bitly.com/bitlinks/&#34;&gt;bitly&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;others:27ce8ab6b266bd47a3d17e0e8f807ad2&#34;&gt;Others&lt;/h2&gt;
+&lt;h2 id=&#34;others&#34;&gt;Others&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kyaukyuai.github.io/&#34;&gt;kyaukyuai.github.io&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
@@ -138,7 +138,7 @@
 
 &lt;p&gt;自分の動機・モチベーションとしては、普段ちょっと勉強したりしたことを忘れてしまうことが多いので、少しでも備忘録として残していくことである.&lt;/p&gt;
 
-&lt;h2 id=&#34;hugoのインストール:8a07c3dae13f18d0c06cf5f9e482b173&#34;&gt;Hugoのインストール&lt;/h2&gt;
+&lt;h2 id=&#34;hugoのインストール&#34;&gt;Hugoのインストール&lt;/h2&gt;
 
 &lt;p&gt;まずは、Hugoのインストールを行う.
 macの場合は下記コマンドでインストール可能.&lt;/p&gt;
@@ -151,7 +151,7 @@ hugo version
 Hugo Static Site Generator v0.16 BuildDate: 2016-06-06T21:37:59+09:00
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;hugo作業用ディレクトリの作成:8a07c3dae13f18d0c06cf5f9e482b173&#34;&gt;Hugo作業用ディレクトリの作成&lt;/h2&gt;
+&lt;h2 id=&#34;hugo作業用ディレクトリの作成&#34;&gt;Hugo作業用ディレクトリの作成&lt;/h2&gt;
 
 &lt;p&gt;下記コマンドでサイト作成の作業用ディレクトリが作成できる.
 ここでの作業用ディレクトリ名と実際のサイト名は関係ないので、Hugo作業用ディレクトリということが認識できる名前であれば問題ない.&lt;/p&gt;
@@ -170,7 +170,7 @@ drwxr-xr-x  3 kyaukyuai  staff  102  6 22 22:55 static
 drwxr-xr-x  3 kyaukyuai  staff  102  6 22 22:18 themes
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;テーマのインストール:8a07c3dae13f18d0c06cf5f9e482b173&#34;&gt;テーマのインストール&lt;/h2&gt;
+&lt;h2 id=&#34;テーマのインストール&#34;&gt;テーマのインストール&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://themes.gohugo.io/&#34;&gt;公式テーマ一覧&lt;/a&gt;よりお気に入りのテーマを探し、インストールする.
 ここでは、&lt;a href=&#34;http://themes.gohugo.io/robust/&#34;&gt;hugo_theme_robust&lt;/a&gt;を選択した例を示す.&lt;/p&gt;
@@ -179,7 +179,7 @@ drwxr-xr-x  3 kyaukyuai  staff  102  6 22 22:18 themes
 git clone https://github.com/dim0627/hugo_theme_robust.git
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;記事の作成:8a07c3dae13f18d0c06cf5f9e482b173&#34;&gt;記事の作成&lt;/h2&gt;
+&lt;h2 id=&#34;記事の作成&#34;&gt;記事の作成&lt;/h2&gt;
 
 &lt;p&gt;下記コマンドで記事のテンプレートを作成し、テンプレート(&lt;code&gt;hello.md&lt;/code&gt;)を編集することで記事を作成できる.&lt;/p&gt;
 
@@ -196,7 +196,7 @@ title = &amp;quot;hello&amp;quot;
 +++
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;記事の確認:8a07c3dae13f18d0c06cf5f9e482b173&#34;&gt;記事の確認&lt;/h2&gt;
+&lt;h2 id=&#34;記事の確認&#34;&gt;記事の確認&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;hugo server -w -D -t hugo_theme_robust
 &lt;/code&gt;&lt;/pre&gt;
@@ -205,7 +205,7 @@ title = &amp;quot;hello&amp;quot;
 
 &lt;p&gt;Dオプションを有効にすることで、下書き中(draft=true)の記事も表示されるようになる.&lt;/p&gt;
 
-&lt;h2 id=&#34;公開用記事の作成:8a07c3dae13f18d0c06cf5f9e482b173&#34;&gt;公開用記事の作成&lt;/h2&gt;
+&lt;h2 id=&#34;公開用記事の作成&#34;&gt;公開用記事の作成&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;hugo
 ls -l public
@@ -220,9 +220,9 @@ git push -u origin master
 
 &lt;p&gt;&lt;a href=&#34;http://kyaukyuai.github.io&#34;&gt;http://kyaukyuai.github.io&lt;/a&gt;で公開記事を確認しよう.&lt;/p&gt;
 
-&lt;h2 id=&#34;tips:8a07c3dae13f18d0c06cf5f9e482b173&#34;&gt;Tips&lt;/h2&gt;
+&lt;h2 id=&#34;tips&#34;&gt;Tips&lt;/h2&gt;
 
-&lt;h3 id=&#34;default-md-の作成によるデフォルトテンプレートの編集:8a07c3dae13f18d0c06cf5f9e482b173&#34;&gt;&lt;code&gt;default.md&lt;/code&gt;の作成によるデフォルトテンプレートの編集&lt;/h3&gt;
+&lt;h3 id=&#34;default-md-の作成によるデフォルトテンプレートの編集&#34;&gt;&lt;code&gt;default.md&lt;/code&gt;の作成によるデフォルトテンプレートの編集&lt;/h3&gt;
 
 &lt;p&gt;&lt;code&gt;archetypes/default.md&lt;/code&gt;を作成することで、デフォルトテンプレートを編集できる.&lt;/p&gt;
 
@@ -240,7 +240,7 @@ toc = false # optional, When set to FALSE this parameter, table of contents not 
 +++
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;werckerによる記事公開の自動化:8a07c3dae13f18d0c06cf5f9e482b173&#34;&gt;Werckerによる記事公開の自動化&lt;/h2&gt;
+&lt;h2 id=&#34;werckerによる記事公開の自動化&#34;&gt;Werckerによる記事公開の自動化&lt;/h2&gt;
 
 &lt;p&gt;基本的には&lt;a href=&#34;http://gohugo.io/tutorials/automated-deployments&#34;&gt;公式の記事&lt;/a&gt;通りに進めることで実現できる.&lt;/p&gt;
 
@@ -272,7 +272,7 @@ deploy:
 
 &lt;p&gt;&lt;img src=&#34;https://kyaukyuai.github.io/images/wercker.png&#34; alt=&#34;wercker&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;ref:8a07c3dae13f18d0c06cf5f9e482b173&#34;&gt;Ref.&lt;/h2&gt;
+&lt;h2 id=&#34;ref&#34;&gt;Ref.&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://tanksuzuki.com/post/hugo-github-pages-1/&#34;&gt;TANKSUZUKI.COM:Hugo + GitHub Pagesでブログを作る#1&lt;/a&gt;&lt;/li&gt;

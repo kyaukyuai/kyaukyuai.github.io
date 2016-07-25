@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MeMo.kyaukyuai </title>
+    <link>https://kyaukyuai.github.io/tags/google-app-engine/</link>
+    <language>en-us</language>
+    <author></author>
+    <rights>(C) 2016</rights>
+    <updated>2016-06-26 11:14:00 &#43;0900 JST</updated>
+
+    
+      
+        <item>
+          <title>Google App Engine で始める WordPressでのサイト構築</title>
+          <link>https://kyaukyuai.github.io/post/wordpress_for_gae/</link>
+          <pubDate>Sun, 26 Jun 2016 11:14:00 JST</pubDate>
+          <author></author>
+          <guid>https://kyaukyuai.github.io/post/wordpress_for_gae/</guid>
+          <description>
+
+&lt;p&gt;近頃、耳にする機会の増えている&lt;a href=&#34;https://cloud.google.com/&#34;&gt;GCP(Google Cloud Platform)&lt;/a&gt;、2016年後半には日本リージョンの開設も予定されている.
+そのGCPのサービスの一つである&lt;a href=&#34;https://cloud.google.com/appengine/&#34;&gt;GAE(Google App Engine)&lt;/a&gt;を利用して、&lt;a href=&#34;https://ja.wordpress.com/&#34;&gt;WordPress&lt;/a&gt;でのサイト構築を試してみる.&lt;/p&gt;
+
+&lt;h2 id=&#34;gcp-project-の作成&#34;&gt;GCP project の作成&lt;/h2&gt;
+
+&lt;p&gt;まずは、&lt;a href=&#34;https://console.cloud.google.com/home/dashboard&#34;&gt;GCPのダッシュボード&lt;/a&gt;からプロジェクトを作成する.
+Headerの&lt;code&gt;Create a project...&lt;/code&gt;より作成する.
+プロジェクト名は任意で良い.&lt;/p&gt;
+
+&lt;h2 id=&#34;cloud-sql-の作成&#34;&gt;Cloud SQL の作成&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://cloud.google.com/sql/docs/create-instance&#34;&gt;ここ&lt;/a&gt;より、Cloud SQLのインスタンスを作成する.
+Instance IDは任意でも良いが、&lt;code&gt;wordpress&lt;/code&gt;にしておくと後々便利である.
+ここでの注意点は2点.&lt;/p&gt;
+
+&lt;h3 id=&#34;1-authorized-ip-addressesにipアドレスを追加&#34;&gt;1. Authorized IP AddressesにIPアドレスを追加&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.google.com/#q=whats+my+ip&#34;&gt;Your IP Address&lt;/a&gt;に記述されているIP Addressを、Authorized networksに追加する.&lt;/p&gt;
+
+&lt;h3 id=&#34;2-regionはus-xxxを選択&#34;&gt;2. Regionはus-xxxを選択&lt;/h3&gt;
+
+&lt;p&gt;地域を「米国」にしないとApp Engineから接続できない.
+自分は暫くここではまってしまった&amp;hellip;&lt;/p&gt;
+
+&lt;h2 id=&#34;appengine-php-wordpress-starter-projectのダウンロード&#34;&gt;appengine-php-wordpress-starter-projectのダウンロード&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/GoogleCloudPlatform/appengine-php-wordpress-starter-project&#34;&gt;ここ&lt;/a&gt;より、githubのGAEのwordpressのスタータ用プロジェクトをダウンロードする.&lt;/p&gt;
+
+&lt;p&gt;そして、&lt;code&gt;app.yaml&lt;/code&gt;と&lt;code&gt;wordpress/wp-config.pho&lt;/code&gt;のyour-project-idの部分を、あなたのプロジェクトID(プロジェクト名ではないので注意)に変換する.&lt;/p&gt;
+
+&lt;h2 id=&#34;ref&#34;&gt;Ref.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://googlecloudplatform.github.io/appengine-php-wordpress-starter-project/&#34;&gt;公式: Quick Start WordPress for Google App Engine&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+      
+    
+
+  </channel>
+</rss>
