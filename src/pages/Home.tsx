@@ -42,6 +42,44 @@ export function Home() {
         </li>
       </ul>
 
+      <section className={styles.recent}>
+        <div className={styles.recentHead}>
+          <h2 className={styles.recentTitle}>最近の記事</h2>
+          <Link to="/articles" className={styles.recentMore}>
+            すべて見る →
+          </Link>
+        </div>
+        <ul className={styles.recentList}>
+          {articles.slice(0, 5).map((a) => {
+            const inner = (
+              <>
+                <time className={styles.recentDate}>{a.date}</time>
+                <span className={styles.recentName}>{a.title}</span>
+                <span className={styles.recentMag}>{a.magazine}</span>
+              </>
+            )
+            return (
+              <li key={a.slug}>
+                {a.selfHosted ? (
+                  <Link className={styles.recentRow} to={`/articles/${a.slug}`}>
+                    {inner}
+                  </Link>
+                ) : (
+                  <a
+                    className={styles.recentRow}
+                    href={a.noteUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {inner}
+                  </a>
+                )}
+              </li>
+            )
+          })}
+        </ul>
+      </section>
+
       <footer className={styles.footer}>
         <span>© {new Date().getFullYear()} kyaukyuai</span>
       </footer>

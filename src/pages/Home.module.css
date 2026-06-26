@@ -74,6 +74,83 @@
   line-height: 1.5;
 }
 
+.recent {
+  margin-top: 52px;
+}
+
+.recentHead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.recentTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.recentMore {
+  font-size: 0.82rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.recentMore:hover {
+  text-decoration: underline;
+}
+
+.recentList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--border);
+}
+
+.recentRow {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  padding: 12px 4px;
+  border-bottom: 1px solid var(--border);
+  text-decoration: none;
+  color: inherit;
+}
+
+.recentRow:hover .recentName {
+  color: var(--accent);
+}
+
+.recentDate {
+  flex: 0 0 auto;
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.recentName {
+  flex: 1 1 auto;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  transition: color 0.15s ease;
+}
+
+.recentMag {
+  flex: 0 0 auto;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+@media (max-width: 560px) {
+  .recentMag {
+    display: none;
+  }
+}
+
 .footer {
   margin-top: auto;
   padding-top: 56px;
