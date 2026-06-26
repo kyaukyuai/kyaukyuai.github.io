@@ -1,0 +1,230 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: #0e0c08;
+  color: #f1ede4;
+  display: flex;
+  flex-direction: column;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  flex: 0 0 auto;
+}
+
+.counter {
+  font-size: 0.85rem;
+  color: #9b9488;
+  font-variant-numeric: tabular-nums;
+}
+
+.close {
+  font: inherit;
+  font-size: 0.85rem;
+  background: none;
+  border: 1px solid #322d24;
+  color: #d8d2c6;
+  padding: 6px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.close:hover {
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.stage {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2vh 3vw;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+/* 1 枚のスライド = 角丸カード。内容に合わせて伸び、隠れない。 */
+.slide {
+  width: min(1040px, 100%);
+  min-height: min(560px, 74vh);
+  background: linear-gradient(145deg, #1c1813, #15120d);
+  border: 1px solid #2c271f;
+  border-radius: 20px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+  padding: clamp(28px, 4.5vw, 64px);
+  display: flex;
+  overflow: hidden;
+  animation: fade 0.22s ease;
+  position: relative;
+}
+
+.slide::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  background: var(--accent);
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.99);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.titleSlide {
+  margin: auto;
+  text-align: left;
+  max-width: 90%;
+}
+
+.titleSlide h1 {
+  font-size: clamp(2rem, 4.6vw, 3.4rem);
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.meta {
+  margin-top: 24px;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: clamp(0.9rem, 1.6vw, 1.2rem);
+}
+
+.contentSlide {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 0;
+}
+
+.contentSlide.split {
+  flex-direction: row;
+  gap: clamp(24px, 4vw, 56px);
+  align-items: flex-start;
+}
+
+.text {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.slideTitle {
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  line-height: 1.35;
+  margin: 0 0 clamp(16px, 2.4vw, 32px);
+  padding-bottom: 14px;
+  border-bottom: 2px solid var(--accent);
+  color: #fff;
+}
+
+.bullets {
+  margin: 0;
+  padding-left: 1.3em;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(8px, 1.4vw, 18px);
+}
+
+.bullets li {
+  font-size: clamp(0.95rem, 1.7vw, 1.4rem);
+  line-height: 1.6;
+}
+
+.bullets li::marker {
+  color: var(--accent);
+}
+
+.bullets a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.bullets a:hover {
+  color: #fff;
+}
+
+.bullets code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9em;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 0.1em 0.4em;
+  border-radius: 4px;
+}
+
+.slideImage {
+  flex: 0 0 40%;
+  max-width: 40%;
+  max-height: 56vh;
+  object-fit: contain;
+  border-radius: 12px;
+  position: sticky;
+  top: 0;
+}
+
+.controls {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 14px 20px calc(14px + env(safe-area-inset-bottom));
+}
+
+.controls button {
+  font: inherit;
+  font-size: 1.2rem;
+  width: 52px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid #322d24;
+  background: #1a1711;
+  color: #f1ede4;
+  cursor: pointer;
+}
+
+.controls button:hover:not(:disabled) {
+  border-color: var(--accent);
+}
+
+.controls button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.hint {
+  font-size: 0.78rem;
+  color: #76705f;
+}
+
+@media (max-width: 640px) {
+  .slide {
+    aspect-ratio: auto;
+    min-height: 70vh;
+  }
+  .contentSlide.split {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .slideImage {
+    max-width: 100%;
+    flex-basis: auto;
+  }
+  .hint {
+    display: none;
+  }
+}

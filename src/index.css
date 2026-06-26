@@ -1,0 +1,41 @@
+:root {
+  --bg: #faf8f3;
+  --card: #ffffff;
+  --border: #e9e4d8;
+  --accent: #c2683a;
+  --text: #1f1d1a;
+  --muted: #6b675f;
+
+  color-scheme: light dark;
+  font-family:
+    ui-sans-serif, system-ui, -apple-system, 'Hiragino Kaku Gothic ProN',
+    'Noto Sans JP', Meiryo, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #16140f;
+    --card: #1f1c16;
+    --border: #322d24;
+    --accent: #e08a52;
+    --text: #f1ede4;
+    --muted: #9b948866;
+    --muted: #9b9488;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: var(--accent);
+}
