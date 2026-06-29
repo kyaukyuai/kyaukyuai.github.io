@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import styles from './Article.module.css'
 import { content } from '../data/content'
+import { views } from '../data/views'
 import { Presentation } from '../components/Presentation'
 
 export function Article() {
@@ -41,6 +42,9 @@ export function Article() {
         <div className={styles.meta}>
           <time>{a.date}</time>
           <span className={styles.mag}>{a.magazine}</span>
+          {views[slug] > 0 && (
+            <span className={styles.views}>👁 {views[slug].toLocaleString()}</span>
+          )}
         </div>
         <div
           className={styles.prose}

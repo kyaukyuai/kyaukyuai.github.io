@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "gen": "tsx script/generate-articles.ts",
-    "build": "tsc --noEmit && vite build && vite build --ssr src/entry-server.tsx --outDir dist/server && tsx script/prerender.ts",
+    "build": "tsx script/fetch-views.ts && tsc --noEmit && vite build && vite build --ssr src/entry-server.tsx --outDir dist/server && tsx script/prerender.ts",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit"
   },
