@@ -4,9 +4,6 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
-  schedule:
-    # 毎日 00:00 UTC（JST 09:00）に再ビルドして記事ごとのビュー数を更新
-    - cron: '0 0 * * *'
 
 permissions:
   contents: read
@@ -31,9 +28,6 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm run build
-        env:
-          # Umami Cloud API キー（リポジトリ Secret）。未設定でもビルドは通る（ビュー数は非表示）。
-          UMAMI_API_KEY: ${{ secrets.UMAMI_API_KEY }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

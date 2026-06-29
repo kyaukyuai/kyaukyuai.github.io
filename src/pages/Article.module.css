@@ -62,11 +62,6 @@
   font-weight: 600;
 }
 
-.views {
-  color: var(--muted);
-  font-variant-numeric: tabular-nums;
-}
-
 .prose {
   line-height: 1.9;
   font-size: 1rem;
