@@ -18,6 +18,14 @@ export const articles: Article[] = [
     "selfHosted": false
   },
   {
+    "slug": "2026-06-23_retrieval-harness-design",
+    "title": "Claude Codeはなぜ検索の索引化を捨てたのか",
+    "date": "2026-06-23",
+    "magazine": "AI時代のエンジニア組織",
+    "noteUrl": "https://note.com/_kihonushi/n/ncbd8498caeaf",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-53_ai-weekly-w26",
     "title": "【AI週報 6/15~6/21】G7にAI首脳が同席、Databricksが「会社の頭脳」を売り始めた",
     "date": "2026-06-21",
