@@ -24,6 +24,8 @@ export function Home() {
               href={w.url}
               target="_blank"
               rel="noopener noreferrer"
+              data-umami-event="home-work"
+              data-umami-event-name={w.title}
             >
               <span className={styles.tag}>{categoryLabel[w.category]}</span>
               <span className={styles.cardTitle}>{w.title}</span>
@@ -32,7 +34,11 @@ export function Home() {
           </li>
         ))}
         <li>
-          <Link className={`${styles.card} ${styles.articlesCard}`} to="/articles">
+          <Link
+            className={`${styles.card} ${styles.articlesCard}`}
+            to="/articles"
+            data-umami-event="home-articles"
+          >
             <span className={styles.tag}>articles</span>
             <span className={styles.cardTitle}>記事一覧</span>
             <span className={styles.cardDesc}>
@@ -61,7 +67,12 @@ export function Home() {
             return (
               <li key={a.slug}>
                 {a.selfHosted ? (
-                  <Link className={styles.recentRow} to={`/articles/${a.slug}`}>
+                  <Link
+                    className={styles.recentRow}
+                    to={`/articles/${a.slug}`}
+                    data-umami-event="home-recent"
+                    data-umami-event-slug={a.slug}
+                  >
                     {inner}
                   </Link>
                 ) : (
@@ -70,6 +81,8 @@ export function Home() {
                     href={a.noteUrl}
                     target="_blank"
                     rel="noopener noreferrer"
+                    data-umami-event="home-recent"
+                    data-umami-event-slug={a.slug}
                   >
                     {inner}
                   </a>

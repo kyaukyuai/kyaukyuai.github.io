@@ -26,7 +26,12 @@ export function Article() {
         <Link to="/articles" className={styles.back}>
           ← 記事
         </Link>
-        <button className={styles.slideButton} onClick={() => setSlideMode(true)}>
+        <button
+          className={styles.slideButton}
+          onClick={() => setSlideMode(true)}
+          data-umami-event="slide-open"
+          data-umami-event-slug={slug}
+        >
           ▸ スライドで見る
         </button>
       </div>
@@ -42,7 +47,13 @@ export function Article() {
           dangerouslySetInnerHTML={{ __html: a.html }}
         />
         <p className={styles.noteLink}>
-          <a href={a.noteUrl} target="_blank" rel="noopener noreferrer">
+          <a
+            href={a.noteUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-umami-event="note-read"
+            data-umami-event-slug={slug}
+          >
             note で読む →
           </a>
         </p>

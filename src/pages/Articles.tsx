@@ -52,7 +52,12 @@ export function Articles() {
           return (
             <li key={a.slug}>
               {a.selfHosted ? (
-                <Link className={styles.item} to={`/articles/${a.slug}`}>
+                <Link
+                  className={styles.item}
+                  to={`/articles/${a.slug}`}
+                  data-umami-event="article-open"
+                  data-umami-event-slug={a.slug}
+                >
                   {meta}
                 </Link>
               ) : (
@@ -61,6 +66,8 @@ export function Articles() {
                   href={a.noteUrl}
                   target="_blank"
                   rel="noopener noreferrer"
+                  data-umami-event="article-open"
+                  data-umami-event-slug={a.slug}
                 >
                   {meta}
                 </a>
