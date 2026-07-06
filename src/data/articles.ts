@@ -10,6 +10,14 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    "slug": "note-article-55_ai-weekly-w28",
+    "title": "【AI週報 6/29~7/5】値下げするClaude、半導体に賭ける韓国、社員を送り込むMicrosoft",
+    "date": "2026-07-05",
+    "magazine": "AI時代のエンジニア組織",
+    "noteUrl": "https://note.com/_kihonushi/n/n40135f591162",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-54_ai-weekly-w27",
     "title": "【AI週報 6/22~6/28】Claudeを「盗んだ」中国、GPT-5.6に待ったをかけた米政府、人を切る大企業",
     "date": "2026-06-28",
