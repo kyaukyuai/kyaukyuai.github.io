@@ -10,6 +10,14 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    "slug": "he-agent-knowledge-layer-wiki-vs-brain",
+    "title": "エージェントの知識レイヤー ── ファイルで始め、エンジンで育てる",
+    "date": "2026-07-06",
+    "magazine": "AI時代のエンジニア組織",
+    "noteUrl": "https://note.com/_kihonushi/n/n53d675e1c111",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-55_ai-weekly-w28",
     "title": "【AI週報 6/29~7/5】値下げするClaude、半導体に賭ける韓国、社員を送り込むMicrosoft",
     "date": "2026-07-05",
