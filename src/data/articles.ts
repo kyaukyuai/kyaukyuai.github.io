@@ -26,6 +26,14 @@ export const articles: Article[] = [
     "selfHosted": false
   },
   {
+    "slug": "he-ai-era-design-doc",
+    "title": "AI時代の design doc ── 仕様は人とエージェントの共有グラウンドになる",
+    "date": "2026-06-30",
+    "magazine": "AI時代のエンジニア組織",
+    "noteUrl": "https://note.com/_kihonushi/n/neb923df45709",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-54_ai-weekly-w27",
     "title": "【AI週報 6/22~6/28】Claudeを「盗んだ」中国、GPT-5.6に待ったをかけた米政府、人を切る大企業",
     "date": "2026-06-28",
