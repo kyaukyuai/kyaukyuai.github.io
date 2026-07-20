@@ -10,6 +10,14 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    "slug": "2026-07-16_company-brain-vs-markdown",
+    "title": "\"KarpathyのLLM WikiからCompany Brainへ ─ Markdown管理が破綻する境界線\"",
+    "date": "2026-07-16",
+    "magazine": "AI時代のエンジニア組織",
+    "noteUrl": "https://note.com/_kihonushi/n/n0ad4b43cc91f",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-56_ai-weekly-w29",
     "title": "【AI週報 7/6~7/12】解雇の62%はAI非ユーザー、48時間で4つの新モデル、「数学を解いた」というOpenAI",
     "date": "2026-07-12",
