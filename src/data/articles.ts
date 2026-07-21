@@ -10,6 +10,14 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    "slug": "note-article-57_every-data-platform-for-agents",
+    "title": "AIエージェントを「動かす」データ基盤 ─ エブリーが示す3ステップ",
+    "date": "2026-07-21",
+    "magazine": "AI時代のエンジニア組織",
+    "noteUrl": "https://note.com/_kihonushi/n/n2acec504a92b",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-57_ai-weekly-w30",
     "title": "【AI週報 7/13~7/19】AIで人を減らした企業の9割が「後悔」、半数は半年で再雇用していた",
     "date": "2026-07-19",
