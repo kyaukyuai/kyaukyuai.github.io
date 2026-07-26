@@ -10,6 +10,14 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    "slug": "note-article-58_ai-weekly-w31",
+    "title": "【AI週報 7/20~7/26】評価中のAIが隔離環境を突破、Opus 5は料金据え置き、UberはAIで1割削減",
+    "date": "2026-07-26",
+    "magazine": "AI時代のエンジニア組織",
+    "noteUrl": "https://note.com/_kihonushi/n/nd37e17684876",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-57_every-data-platform-for-agents",
     "title": "AIエージェントを「動かす」データ基盤 ─ エブリーが示す3ステップ",
     "date": "2026-07-21",
