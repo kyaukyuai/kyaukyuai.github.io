@@ -18,6 +18,14 @@ export const articles: Article[] = [
     "selfHosted": false
   },
   {
+    "slug": "he-sierra-mcp-gateway-iceberg",
+    "title": "MCPゲートウェイという氷山 ─ Sierraが学んだ7つの教訓",
+    "date": "2026-07-23",
+    "magazine": "AI時代のエンジニア組織",
+    "noteUrl": "https://note.com/_kihonushi/n/n440a4295243d",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-57_every-data-platform-for-agents",
     "title": "AIエージェントを「動かす」データ基盤 ─ エブリーが示す3ステップ",
     "date": "2026-07-21",
