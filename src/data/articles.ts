@@ -10,6 +10,14 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    "slug": "note-article-59_ai-weekly-w32",
+    "title": "【AI週報 7/27~8/2】GPT-5.6が8割値下げ、Anthropic CEOも署名「AI開発に歯止めの準備を」",
+    "date": "2026-08-02",
+    "magazine": "AI時代のエンジニア組織",
+    "noteUrl": "https://note.com/_kihonushi/n/n647192b55dfb",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-58_ai-weekly-w31",
     "title": "【AI週報 7/20~7/26】評価中のAIが隔離環境を突破、Opus 5は料金据え置き、UberはAIで1割削減",
     "date": "2026-07-26",
