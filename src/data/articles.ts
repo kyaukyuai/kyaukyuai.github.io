@@ -10,6 +10,14 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    "slug": "note-article-60_ai-weekly-w33",
+    "title": "【AI週報 8/3~8/9】ハサビスがDeepMind CEO退任、ジェフ・ディーンはGoogleを去った",
+    "date": "2026-08-09",
+    "magazine": "AI時代のエンジニア組織",
+    "noteUrl": "https://note.com/_kihonushi/n/n26232ada4e33",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-59_ai-weekly-w32",
     "title": "【AI週報 7/27~8/2】GPT-5.6が8割値下げ、Anthropic CEOも署名「AI開発に歯止めの準備を」",
     "date": "2026-08-02",
