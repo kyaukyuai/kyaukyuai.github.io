@@ -10,6 +10,14 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    "slug": "note-article-61_ai-weekly-w34",
+    "title": "【AI週報 8/10~8/16】Claudeが167年の数学難問で前進、SpaceXはCursorを買収した",
+    "date": "2026-08-16",
+    "magazine": "AI時代のエンジニア組織",
+    "noteUrl": "https://note.com/_kihonushi/n/na3f38a8e1840",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-60_ai-weekly-w33",
     "title": "【AI週報 8/3~8/9】ハサビスがDeepMind CEO退任、ジェフ・ディーンはGoogleを去った",
     "date": "2026-08-09",
