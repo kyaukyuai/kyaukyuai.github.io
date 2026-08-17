@@ -18,6 +18,14 @@ export const articles: Article[] = [
     "selfHosted": false
   },
   {
+    "slug": "note-article-62_frontier-firm",
+    "title": "「AIを使う会社」と「仕事を作り替えた会社」の差が、数字になり始めた ─ MicrosoftのFrontier Firm論",
+    "date": "2026-08-16",
+    "magazine": "AI時代のエンジニア組織",
+    "noteUrl": "https://note.com/_kihonushi/n/n9467099cbb2b",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-60_ai-weekly-w33",
     "title": "【AI週報 8/3~8/9】ハサビスがDeepMind CEO退任、ジェフ・ディーンはGoogleを去った",
     "date": "2026-08-09",
