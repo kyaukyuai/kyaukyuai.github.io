@@ -10,6 +10,14 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    "slug": "note-article-63_ai-weekly-w35",
+    "title": "【AI週報 8/17~8/23】AnthropicがSpaceX並みの上場を狙い、OpenAIは訓練を2週間止めた",
+    "date": "2026-08-23",
+    "magazine": "AI時代のエンジニア組織",
+    "noteUrl": "https://note.com/_kihonushi/n/n9183b2c321b3",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-61_ai-weekly-w34",
     "title": "【AI週報 8/10~8/16】Claudeが167年の数学難問で前進、SpaceXはCursorを買収した",
     "date": "2026-08-16",
