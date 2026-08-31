@@ -18,6 +18,14 @@ export const articles: Article[] = [
     "selfHosted": false
   },
   {
+    "slug": "note-article-64_salesforce-in-claude",
+    "title": "人が決め、AIが動き、業務ルールが縛る ─ Salesforce in Claudeの統制設計",
+    "date": "2026-08-27",
+    "magazine": "AI時代のエンジニア組織",
+    "noteUrl": "https://note.com/_kihonushi/n/n13845d280c38",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-63_ai-weekly-w35",
     "title": "【AI週報 8/17~8/23】AnthropicがSpaceX並みの上場を狙い、OpenAIは訓練を2週間止めた",
     "date": "2026-08-23",
