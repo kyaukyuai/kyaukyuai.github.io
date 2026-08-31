@@ -10,6 +10,14 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    "slug": "note-article-65_ai-weekly-w36",
+    "title": "【AI週報 8/24~8/30】OpenAIがCursorを切り、NVIDIAはHugging Faceを買うと報じられた",
+    "date": "2026-08-30",
+    "magazine": "AI時代のエンジニア組織",
+    "noteUrl": "https://note.com/_kihonushi/n/n381cce86a613",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-63_ai-weekly-w35",
     "title": "【AI週報 8/17~8/23】AnthropicがSpaceX並みの上場を狙い、OpenAIは訓練を2週間止めた",
     "date": "2026-08-23",
