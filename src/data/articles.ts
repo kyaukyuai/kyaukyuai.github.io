@@ -10,6 +10,14 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    "slug": "note-article-67_local-llm-openweight",
+    "title": "手元で動くAIの現在地 ─ オープンウェイトとローカルLLMの教科書",
+    "date": "2026-09-05",
+    "magazine": "AI時代のエンジニア組織",
+    "noteUrl": "https://note.com/_kihonushi/n/nbdd3ae5897a6",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-65_ai-weekly-w36",
     "title": "【AI週報 8/24~8/30】OpenAIがCursorを切り、NVIDIAはHugging Faceを買うと報じられた",
     "date": "2026-08-30",
