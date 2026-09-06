@@ -18,6 +18,14 @@ export const articles: Article[] = [
     "selfHosted": false
   },
   {
+    "slug": "note-article-68_cloudflare-os",
+    "title": "会話が、会社の道具になる ─ Cloudflareが無料で配る「会社OS」",
+    "date": "2026-09-05",
+    "magazine": "AI時代のエンジニア組織",
+    "noteUrl": "https://note.com/_kihonushi/n/nfcb084b0000e",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-65_ai-weekly-w36",
     "title": "【AI週報 8/24~8/30】OpenAIがCursorを切り、NVIDIAはHugging Faceを買うと報じられた",
     "date": "2026-08-30",
