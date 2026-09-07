@@ -10,6 +10,14 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    "slug": "note-article-69_ai-weekly-w37",
+    "title": "【AI週報 8/31~9/6】GPT-6 Astra登場、Xは実演だらけになった",
+    "date": "2026-09-06",
+    "magazine": "AI時代のエンジニア組織",
+    "noteUrl": "https://note.com/_kihonushi/n/n2a847032bcd6",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-67_local-llm-openweight",
     "title": "手元で動くAIの現在地 ─ オープンウェイトとローカルLLMの教科書",
     "date": "2026-09-05",
