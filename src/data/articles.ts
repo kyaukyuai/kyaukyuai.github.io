@@ -34,6 +34,14 @@ export const articles: Article[] = [
     "selfHosted": false
   },
   {
+    "slug": "note-article-66_uber-software-factory",
+    "title": "PRの7割がエージェント、支出は横ばい ─ UberのAI開発費 6つのレバー",
+    "date": "2026-08-31",
+    "magazine": "AI時代のエンジニア組織",
+    "noteUrl": "https://note.com/_kihonushi/n/n4e407828ac6f",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-65_ai-weekly-w36",
     "title": "【AI週報 8/24~8/30】OpenAIがCursorを切り、NVIDIAはHugging Faceを買うと報じられた",
     "date": "2026-08-30",
