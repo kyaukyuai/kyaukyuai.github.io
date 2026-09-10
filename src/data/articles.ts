@@ -10,6 +10,14 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    "slug": "note-article-70_gemini-enterprise",
+    "title": "Googleが名乗った「職場AIの入口」── Gemini Enterprise 大解剖",
+    "date": "2026-09-10",
+    "magazine": "AI時代のエンジニア組織",
+    "noteUrl": "https://note.com/_kihonushi/n/nee0f44720d03",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-69_ai-weekly-w37",
     "title": "【AI週報 8/31~9/6】GPT-6 Astra登場、Xは実演だらけになった",
     "date": "2026-09-06",
