@@ -10,6 +10,14 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    "slug": "note-article-72_snowflake-databricks",
+    "title": "Snowflake / DatabricksのAI戦略 ── エージェントの仕事の99%は基盤の中にある",
+    "date": "2026-09-14",
+    "magazine": "AI時代のエンジニア組織",
+    "noteUrl": "https://note.com/_kihonushi/n/ndc703b035506",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-71_ai-weekly-w38",
     "title": "【AI週報 9/7~9/13】1.7億再生の辞職から4日、AnthropicとOpenAIのCEOが「減速」に同意した",
     "date": "2026-09-13",
