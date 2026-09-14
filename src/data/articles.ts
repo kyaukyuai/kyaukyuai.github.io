@@ -10,6 +10,14 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    "slug": "note-article-71_ai-weekly-w38",
+    "title": "【AI週報 9/7~9/13】1.7億再生の辞職から4日、AnthropicとOpenAIのCEOが「減速」に同意した",
+    "date": "2026-09-13",
+    "magazine": "AI時代のエンジニア組織",
+    "noteUrl": "https://note.com/_kihonushi/n/ne77e78d55ef8",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-70_gemini-enterprise",
     "title": "Googleが名乗った「職場AIの入口」── Gemini Enterprise 大解剖",
     "date": "2026-09-10",
