@@ -18,6 +18,14 @@ export const articles: Article[] = [
     "selfHosted": false
   },
   {
+    "slug": "note-article-73_grok-bot-nyumon",
+    "title": "Grok Bot 入門 ── クラウドPC付きの「AIチームメイト」",
+    "date": "2026-09-14",
+    "magazine": "AI時代のエンジニア組織",
+    "noteUrl": "https://note.com/_kihonushi/n/n98e0e30f53af",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-71_ai-weekly-w38",
     "title": "【AI週報 9/7~9/13】1.7億再生の辞職から4日、AnthropicとOpenAIのCEOが「減速」に同意した",
     "date": "2026-09-13",
