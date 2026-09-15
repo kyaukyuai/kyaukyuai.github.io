@@ -10,6 +10,14 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    "slug": "note-article-74_ai-2027-ai-2040",
+    "title": "AI 2027 / AI 2040 大解剖 ── 「滅亡の予測」の答え合わせと回避策",
+    "date": "2026-09-15",
+    "magazine": "AI時代のエンジニア組織",
+    "noteUrl": "https://note.com/_kihonushi/n/nbd7e91918c3c",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-72_snowflake-databricks",
     "title": "Snowflake / DatabricksのAI戦略 ── エージェントの仕事の99%は基盤の中にある",
     "date": "2026-09-14",
