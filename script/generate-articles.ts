@@ -1,19 +1,21 @@
 // output/articles/*.md から記事一覧データを生成し、flagship 記事は本文を HTML 化して同梱する。
 // 使い方: tsx script/generate-articles.ts [articlesDir]
-//   articlesDir 省略時は ../kyaukyuai/output/articles（sibling リポジトリ）。
+//   articlesDir 省略時は ../claudecode/output/articles（無ければ ../kyaukyuai/…・sibling リポジトリ）。
 import {
   readdirSync,
   readFileSync,
   writeFileSync,
   copyFileSync,
-  mkdirSync,
-} from 'node:fs'
+  mkdirSync, existsSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { dirname, resolve, basename } from 'node:path'
 import { marked } from 'marked'
 
 const here = dirname(fileURLToPath(import.meta.url))
-const articlesDir = resolve(here, '..', process.argv[2] ?? '../kyaukyuai/output/articles')
+// 本リポジトリの兄弟ディレクトリ名は環境で異なる（旧: kyaukyuai / 現: claudecode）。存在する方を使う
+const siblingCandidates = ['../claudecode/output/articles', '../kyaukyuai/output/articles']
+const defaultArticlesDir = siblingCandidates.find((c) => existsSync(resolve(here, '..', c))) ?? siblingCandidates[0]
+const articlesDir = resolve(here, '..', process.argv[2] ?? defaultArticlesDir)
 const imagesDir = resolve(articlesDir, '../images')
 const publicImages = resolve(here, '../public/images')
 
