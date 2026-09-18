@@ -10,6 +10,14 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    "slug": "note-article-75_jev-typesafe",
+    "title": "Jev 大解剖 ── テキストを生成しない「判断専用」モデル",
+    "date": "2026-09-18",
+    "magazine": "AI時代のエンジニア組織",
+    "noteUrl": "https://note.com/_kihonushi/n/n55195eb0b6ea",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-74_ai-2027-ai-2040",
     "title": "AI 2027 / AI 2040 大解剖 ── 「滅亡の予測」の答え合わせと回避策",
     "date": "2026-09-15",
