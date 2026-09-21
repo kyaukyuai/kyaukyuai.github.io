@@ -10,6 +10,14 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    "slug": "note-article-76_ai-weekly-w39",
+    "title": "【AI週報 9/14~9/20】OpenAIへの侵入は72時間で完了した。使われたのはClaudeだった",
+    "date": "2026-09-21",
+    "magazine": "AI時代のエンジニア組織",
+    "noteUrl": "https://note.com/_kihonushi/n/ne0687a7300d9",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-75_jev-typesafe",
     "title": "Jev 大解剖 ── テキストを生成しない「判断専用」モデル",
     "date": "2026-09-18",
