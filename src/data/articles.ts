@@ -10,6 +10,14 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    "slug": "note-article-78_ai-weekly-w40",
+    "title": "【AI週報 9/21~9/27】OpenAIとAnthropicの大幅値下げと、米中によるAIの「SI」への改名",
+    "date": "2026-09-27",
+    "magazine": "AI週報",
+    "noteUrl": "https://note.com/_kihonushi/n/n4f0673674abb",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-77_copilot-os-update",
     "title": "Microsoftが宣言した「仕事のOS」── 新Copilot 大解剖",
     "date": "2026-09-26",
