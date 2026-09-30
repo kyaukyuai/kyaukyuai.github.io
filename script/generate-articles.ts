@@ -33,7 +33,11 @@ function frontmatter(src: string): Record<string, string> {
   for (const line of m[1].split('\n')) {
     const i = line.indexOf(': ')
     if (i === -1 || line.startsWith(' ') || line.startsWith('-')) continue
-    fm[line.slice(0, i).trim()] = line.slice(i + 2).trim()
+    // YAML の引用符（magazine: "大解剖" など）は値に含めない
+    fm[line.slice(0, i).trim()] = line
+      .slice(i + 2)
+      .trim()
+      .replace(/^(["'])(.*)\1$/, '$2')
   }
   return fm
 }
