@@ -18,6 +18,14 @@ export const articles: Article[] = [
     "selfHosted": false
   },
   {
+    "slug": "2026-10-01_openai-dots",
+    "title": "頼む前に働くAI ── OpenAI dots 大解剖",
+    "date": "2026-10-01",
+    "magazine": "大解剖",
+    "noteUrl": "https://note.com/_kihonushi/n/n7c9cae31de67",
+    "selfHosted": false
+  },
+  {
     "slug": "2026-09-30_databricks-ai",
     "title": "Databricks 大解剖",
     "date": "2026-09-30",
