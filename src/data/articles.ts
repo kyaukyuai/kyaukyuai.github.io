@@ -10,6 +10,14 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    "slug": "2026-10-01_informatica-ai",
+    "title": "AIにデータを渡す前の下ごしらえ役 ── Informatica 大解剖",
+    "date": "2026-10-01",
+    "magazine": "大解剖",
+    "noteUrl": "https://note.com/_kihonushi/n/n430d7470fcb8",
+    "selfHosted": false
+  },
+  {
     "slug": "2026-09-30_databricks-ai",
     "title": "Databricks 大解剖",
     "date": "2026-09-30",
