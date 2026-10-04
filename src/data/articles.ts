@@ -10,6 +10,14 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    "slug": "note-article-79_ai-weekly-w41",
+    "title": "【AI週報 9/28~10/4】OpenAIは次期モデルを出さず、Anthropicは2兆ドルの上場へ",
+    "date": "2026-10-04",
+    "magazine": "AI週報",
+    "noteUrl": "https://note.com/_kihonushi/n/n92a04abe5170",
+    "selfHosted": false
+  },
+  {
     "slug": "2026-10-01_informatica-ai",
     "title": "AIにデータを渡す前の下ごしらえ役 ── Informatica 大解剖",
     "date": "2026-10-01",
