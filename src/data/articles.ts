@@ -10,6 +10,14 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    "slug": "note-article-80_jp-enterprise-weekly-w41",
+    "title": "【国内エンタープライズAI週報 9/28~10/4】企業の生成AI利用率は9.2%、AIデータセンターには2.3兆円",
+    "date": "2026-10-05",
+    "magazine": "国内エンタープライズAI週報",
+    "noteUrl": "https://note.com/_kihonushi/n/n1937a0c20841",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-79_ai-weekly-w41",
     "title": "【AI週報 9/28~10/4】OpenAIは次期モデルを出さず、Anthropicは2兆ドルの上場へ",
     "date": "2026-10-04",
