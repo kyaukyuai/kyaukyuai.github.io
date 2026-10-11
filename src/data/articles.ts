@@ -10,6 +10,14 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    "slug": "note-article-81_ai-weekly-w42",
+    "title": "【AI週報 10/5~10/11】AnthropicのAIが警察に作り話の通報、ChatGPTは全員がGPT-6に",
+    "date": "2026-10-11",
+    "magazine": "AI週報",
+    "noteUrl": "https://note.com/_kihonushi/n/n104102d9ec91",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-80_jp-enterprise-weekly-w41",
     "title": "【国内エンタープライズAI週報 9/28~10/4】企業の生成AI利用率は9.2%、AIデータセンターには2.3兆円",
     "date": "2026-10-05",
