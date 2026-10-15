@@ -10,6 +10,14 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    "slug": "note-article-82_jp-enterprise-weekly-w42",
+    "title": "【国内エンタープライズAI週報 10/5~10/11】Claudeの全社試行はシート単価の3.9倍、みずほは3万人へ",
+    "date": "2026-10-14",
+    "magazine": "国内エンタープライズAI週報",
+    "noteUrl": "https://note.com/_kihonushi/n/nd270e963bc9b",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-81_ai-weekly-w42",
     "title": "【AI週報 10/5~10/11】AnthropicのAIが警察に作り話の通報、ChatGPTは全員がGPT-6に",
     "date": "2026-10-11",
