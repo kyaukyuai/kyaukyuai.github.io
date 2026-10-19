@@ -10,6 +10,14 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    "slug": "note-article-83_ai-weekly-w43",
+    "title": "【AI週報 10/12~10/18】Anthropicの技術職採用、ジュニアは27%から9%に",
+    "date": "2026-10-18",
+    "magazine": "AI週報",
+    "noteUrl": "https://note.com/_kihonushi/n/nec6ed038ba81",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-82_jp-enterprise-weekly-w42",
     "title": "【国内エンタープライズAI週報 10/5~10/11】Claudeの全社試行はシート単価の3.9倍、みずほは3万人へ",
     "date": "2026-10-14",
