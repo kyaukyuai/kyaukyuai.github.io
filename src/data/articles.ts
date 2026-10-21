@@ -10,6 +10,14 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    "slug": "note-article-84_jp-enterprise-weekly-w43",
+    "title": "【国内エンタープライズAI週報 10/12~10/18】漏えいは前年の1.5倍、AIを使う攻撃に備える企業は13%",
+    "date": "2026-10-21",
+    "magazine": "国内エンタープライズAI週報",
+    "noteUrl": "https://note.com/_kihonushi/n/n4f3cfbc5f26f",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-83_ai-weekly-w43",
     "title": "【AI週報 10/12~10/18】Anthropicの技術職採用、ジュニアは27%から9%に",
     "date": "2026-10-18",
