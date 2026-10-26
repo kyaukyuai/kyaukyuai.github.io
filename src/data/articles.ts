@@ -10,6 +10,14 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    "slug": "note-article-85_ai-weekly-w44",
+    "title": "【AI週報 10/19~10/25】OpenAIは学習を一時停止、Anthropicの上期赤字は807億ドル",
+    "date": "2026-10-25",
+    "magazine": "AI週報",
+    "noteUrl": "https://note.com/_kihonushi/n/n81f53ad33360",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-84_jp-enterprise-weekly-w43",
     "title": "【国内エンタープライズAI週報 10/12~10/18】漏えいは前年の1.5倍、AIを使う攻撃に備える企業は13%",
     "date": "2026-10-21",
