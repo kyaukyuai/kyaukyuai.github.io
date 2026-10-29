@@ -10,6 +10,14 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    "slug": "note-article-86_jp-enterprise-weekly-w44",
+    "title": "【国内エンタープライズAI週報 10/19~10/25】首相が「今夜対応を」、NECはClaude Codeを3万人に",
+    "date": "2026-10-29",
+    "magazine": "国内エンタープライズAI週報",
+    "noteUrl": "https://note.com/_kihonushi/n/n28074b1ece39",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-85_ai-weekly-w44",
     "title": "【AI週報 10/19~10/25】OpenAIは学習を一時停止、Anthropicの上期赤字は807億ドル",
     "date": "2026-10-25",
