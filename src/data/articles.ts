@@ -10,6 +10,14 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    "slug": "note-article-87_ai-weekly-w45",
+    "title": "【AI週報 10/26~11/1】ClaudeのUltraは5時間制限を撤廃、Alphabetは上場来最大の下げ",
+    "date": "2026-11-01",
+    "magazine": "AI週報",
+    "noteUrl": "https://note.com/_kihonushi/n/n82421d293670",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-86_jp-enterprise-weekly-w44",
     "title": "【国内エンタープライズAI週報 10/19~10/25】首相が「今夜対応を」、NECはClaude Codeを3万人に",
     "date": "2026-10-29",
