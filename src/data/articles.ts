@@ -10,6 +10,14 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    "slug": "note-article-88_jp-enterprise-weekly-w45",
+    "title": "【国内エンタープライズAI週報 10/26~11/1】富士通はAIエージェント案件を倍に、JR九州は社員がアプリを内製",
+    "date": "2026-11-06",
+    "magazine": "国内エンタープライズAI週報",
+    "noteUrl": "https://note.com/_kihonushi/n/ne6ec384717f6",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-87_ai-weekly-w45",
     "title": "【AI週報 10/26~11/1】ClaudeのUltraは5時間制限を撤廃、Alphabetは上場来最大の下げ",
     "date": "2026-11-01",
