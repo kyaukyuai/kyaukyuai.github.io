@@ -10,6 +10,14 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    "slug": "note-article-89_ai-weekly-w46",
+    "title": "【AI週報 11/2~11/8】データセンターの住民投票38件中37件で反対派が勝利、Anthropicの四半期売上は170億ドル",
+    "date": "2026-11-08",
+    "magazine": "AI週報",
+    "noteUrl": "https://note.com/_kihonushi/n/nebb0d42868c4",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-88_jp-enterprise-weekly-w45",
     "title": "【国内エンタープライズAI週報 10/26~11/1】富士通はAIエージェント案件を倍に、JR九州は社員がアプリを内製",
     "date": "2026-11-06",
