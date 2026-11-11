@@ -10,6 +10,14 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    "slug": "note-article-90_jp-enterprise-weekly-w46",
+    "title": "【国内エンタープライズAI週報 11/2~11/8】フジテレビはドラマ制作にAI、トヨタはロボット事業の新組織",
+    "date": "2026-11-11",
+    "magazine": "国内エンタープライズAI週報",
+    "noteUrl": "https://note.com/_kihonushi/n/n849205bb1fd0",
+    "selfHosted": false
+  },
+  {
     "slug": "note-article-89_ai-weekly-w46",
     "title": "【AI週報 11/2~11/8】データセンターの住民投票38件中37件で反対派が勝利、Anthropicの四半期売上は170億ドル",
     "date": "2026-11-08",
